@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Pod request access landing page</title>
+</head>
+<body class="page">
+  <header class="page__header header">
+    <a class="header__link">
+      <img class="header__logo" src="./images/desktop/logo.svg" alt="Pod logo" width="135" height="56">
+    </a>
+  </header>
+  <main class="page__main">
+    <h1 class="visually-hidden">Pod request access landing page</h1>
+    <section class="form">
+      <h2 class="form__title">
+        <span class="txt-primary">Publish your podcasts</span> everywhere.
+      </h2>
+      <p class="form__text">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+      <ul class="form__list podcasts">
+        <li class="podcasts__item">
+          <span class="visually-hidden">Spotify</span>
+          <img class="podcasts__icon" src="./images/desktop/spotify.svg" alt="Spotify logo" width="56" height="17">
+        </li>
+        <li class="podcasts__item">
+          <span class="visually-hidden">Apple podcasts</span>
+          <img class="podcasts__icon" src="./images/desktop/apple-podcast.svg" alt="Apple podcasts logo" width="45" height="17">
+        </li>
+        <li class="podcasts__item">
+          <span class="visually-hidden">Google podcasts</span>
+          <img class="podcasts__icon" src="./images/desktop/google-podcasts.svg" alt="Google podcasts logo" width="73" height="11">
+        </li>
+        <li class="podcasts__item">
+          <span class="visually-hidden">Pocket casts</span>
+          <img class="podcasts__icon" src="./images/desktop/pocket-casts.svg" alt="Pocket casts logo" width="77" height="15">
+        </li>
+      </ul>
+      <form class="form__item" action="#" method="post">
+        <input class="form__input" type="email" name="user-email" id="user-email" placeholder="Email address">
+        <button class="form__button" type="submit">Request access</button>
+      </form>
+    </section>
+  </main>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
