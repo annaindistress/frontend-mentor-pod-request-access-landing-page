@@ -19,6 +19,7 @@
 :root {
   --color-primary: #54e6af;
   --color-primary-hover: #b3ffe2;
+  --color-error: #fb3e3e;
   --color-white: #ffffff;
   --color-grey-light: #c2cbe5;
   --color-grey: #5a668a;
@@ -150,6 +151,20 @@
   outline: 2px solid var(--color-primary);
 }
 
+.form__error {
+  display: none;
+  padding: 0 0 8px 32px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: left;
+  color: var(--color-error);
+}
+
+.form__error--active {
+  display: block;
+}
+
 .form__button {
   padding: 9px;
   font-family: inherit;
@@ -163,6 +178,7 @@
   border: 0;
   border-radius: 28px;
   box-shadow: 0 25px 20px -20px rgba(84, 230, 175, .4979);
+  cursor: pointer;
 }
 
 .form__button:hover,
@@ -244,6 +260,12 @@
     padding-top: 14px;
     padding-bottom: 14px;
     padding-right: 172px;
+  }
+
+  .form__error {
+    position: absolute;
+    bottom: -22px;
+    padding-bottom: 0;
   }
 
   .form__button {
